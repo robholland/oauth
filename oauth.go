@@ -47,6 +47,8 @@ type Flow struct {
 	Scopes []string
 	// OAuth application ID.
 	ClientID string
+	// OAuth Audience. Only applicable for some OAuth providers.
+	Audience string
 	// OAuth application secret. Only applicable in web application flow.
 	ClientSecret string
 	// The localhost URI for web application flow callback, e.g. "http://127.0.0.1/callback".

@@ -14,7 +14,7 @@ func Example() {
 	scopes := []string{"repo", "read:org"}
 	httpClient := http.DefaultClient
 
-	code, err := RequestCode(httpClient, "https://github.com/login/device/code", clientID, scopes)
+	code, err := RequestCode(httpClient, "https://github.com/login/device/code", clientID, "", scopes)
 	if err != nil {
 		panic(err)
 	}
