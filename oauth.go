@@ -51,6 +51,8 @@ type Flow struct {
 	Audience string
 	// OAuth application secret. Only applicable in web application flow.
 	ClientSecret string
+	// OAuth extra params. Only applicable in the web application flow for some providers.
+	BrowserParams map[string]string
 	// The localhost URI for web application flow callback, e.g. "http://127.0.0.1/callback".
 	CallbackURI string
 
